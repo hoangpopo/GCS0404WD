@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+	<<style type="text/css">
+		#menu ul{
+			background: #00FFFF;
+			width: 250px;
+			list-style-type:none;
+			text-align: left;
+			padding: 0px;
+		}
+		#menu li{
+			width: auto;
+			height: 50px;
+			line-height: 50px;
+			border-bottom:1px solid gray;
+			padding-left:10px;
+		}
+		#menu li a{
+			text-decoration: none;
+			text-transform: uppercase;
+			display:block;
+			font-weight:bold;
+			color :#333;
+		}
+		#menu>ul>li{
+			position:relative;
+		}
+		.sub-menu {
+			position: absolute;
+			top:0px;
+			margin-left: 234px;
+			display:none;
+			list-style-type: none;
+			background: #00ffff; 
+		}
+		.b{
+			text-align: center;
+		}
+		#menu li:hover {
+			background:#CDE2CD;
+		}
+		#menu li:hover .sub-menu {
+			dislay:block;
+			background:#00ffff;
+		}
+
+
+	</style>
+</head>
+<body>
+	<img src="/WebDesign/blackgoose.png">
+	<div id="main">
+		<div id="menu">
+		<ul>
+			<li><a href="customer/cus.html">Customer</a></li>
+			<li><a href="employee/employee.html"target="_self">Employee</a>
+				<ul class="sub-menu">
+					<li>VIP</li>
+					<li>Register</li>
+					<li>Anonymous</li>
+				</ul>
+
+			</li>
+			<li><a href="product/product.html">Product</a></li>
+		</ul>
+		</div>
+	</div>
+</body>
+</html>
